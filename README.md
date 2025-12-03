@@ -1,4 +1,53 @@
-# T-Level-ESP
+# T-Level-Exam Thing
+
+## Activity A Checklist
+
+### Preparation and Research
+**Part I**
+Cover:
+- Hardware and software applications
+- Emerging Tech
+- Meeting diverse user needs
+- Industry specific guidelines
+
+Tips:
+
+Cover:
+- Use credible sources (industry reports, standards, tech blogs)
+- Organise notes under headings
+- keep notes facts - no analysis
+- Include security considerations
+- Note relevant lawaws
+
+
+### **Business Context**
+- - [ ] Client Brief Review
+- - [ ] Stakeholders
+- - [ ] Constraints
+- - [ ] Empathy Mapping
+- - [ ] SWOT Analysis
+- - [ ] User Stories & Acceptance
+
+- [ ] **Functional & Non Functional Requirements**
+-  - What the system must do & Performance, security, usability
+
+- [ ] **Decomposition of Requirements**
+
+- [ ] **KPI's & User Acceptance**
+ 
+### **Proposed Solution**
+- [ ] **Description of Proposed Solution** 
+
+### **Justification**
+- [ ] **Meet the Client and User needs**
+
+- [ ] **Risks, Mitigation & Wider Issues**
+
+- [ ] **Regulatory Guidelines and Legal Requirements**
+
+- [ ] **Appendix**
+
+
 ## Activity B Checklist
 
 ### Visual Interface Design
