@@ -3,7 +3,6 @@
 ## Activity A Checklist
 
 ### Preparation and Research
-**Part I**
 Cover:
 - Hardware and software applications
 - Emerging Tech
@@ -120,3 +119,45 @@ Cover:
   Test the inner workings and logic by analysing the source code.
 
 ### Communication
+
+
+
+## Task 3a
+
+
+## Task 3b
+
+### Assets & Content
+- [ ] Explain why each key asset was chosen
+- [ ] Explain why aternatives were rejected
+- [ ] State how sources were valid & reliable
+- [ ] Legal issues (copyright, licences)
+- [ ] Include ethucal issues (accessibility, inclusivity)
+
+### Requirements Evaluation
+- [ ] Evaluate how well functuional requirements were met
+- [ ] Evaluate how well non-functional requirements were met
+- [ ] Judge performance against KPIs
+- [ ] Evaluate user acceptance criteria using evidence
+- [ ] Use Task 3a data to support claims
+
+### Use of evidence (Task 3a Link)
+- [ ] Reffer to survey scores correctly
+- [ ] Use interview themes
+- [ ] Include at least one user quote
+- [ ] Use observational notes
+- [ ] Show triangulation (score + theme + quote)
+
+### Improvements
+- [ ] List realistic improvements
+- [ ] Each improvement supported by Task 3a evidence
+- [ ] Explain why improvements matter
+- [ ] Show hoe improvements help users
+
+### Writing Quality
+
+- [ ] Clear structure (intro -> evaluation -> improvements -> conclusion)
+- [ ] Professional wording
+- [ ] Full sentences and paragraphs
+- [ ] No bullet-point-only answers
+
