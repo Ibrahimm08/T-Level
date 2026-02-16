@@ -162,6 +162,17 @@ Cover:
 - [ ] Compare technical vs non technical users
 - [ ] Complete triangulation (score + theme + quote)
 
+### Survey
+- [ ] 5 Quantitative rating scale questions
+- [ ] 3-5 open ended questions
+- [ ] Questions linked to performance, code quality, logic reliability
+- [ ] No vague or repeated questions
+- [ ] Cover usability, navigation, clarity, accessibility, design
+- [ ] Easy to understand
+
+### Observation
+- [ ]
+
 
 ## Task 3b
 
