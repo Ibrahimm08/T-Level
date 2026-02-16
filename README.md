@@ -124,6 +124,44 @@ Cover:
 
 ## Task 3a
 
+### Aims and Purpose
+- [ ] Explain why we collect feedback
+- [ ] Link to improving prototype (usability, performance, accessibility, navigation, etc
+- [ ] Explain What we want to find out
+- [ ] Link to future improvements
+
+### Target Users
+- [ ] Technical users identified (role and number)
+- [ ] Non-Technical users identified
+- [ ] Jusify our user types
+- [ ] Explain the different insights they provide
+
+### Feedback methods
+- [ ] Surveys (quantitative + qualitative)
+- [ ] Observation (task-based)
+- [ ] Justify method suitability
+- [ ] How each method is linked to aims
+
+### Practical Session Plan
+- [ ] Where feedback takes place
+- [ ] Device/test environment used
+- [ ] Task users will do
+- [ ] Time for each task
+- [ ] How the prototype will be shown
+
+### Data Recording Plan
+- [ ] How survey data will be stored (Form -> Spreedsheets, Security?)
+- [ ] How observations will be logged (checklist, timings, notes)
+- [ ] Clear and secure storage of data
+
+### Data analysis
+**Explain How You Will**
+- [ ] Calculate averages/ compare scores
+- [ ] Identify lowest scoring questions
+- [ ] Group interview comments into themes
+- [ ] Compare technical vs non technical users
+- [ ] Complete triangulation (score + theme + quote)
+
 
 ## Task 3b
 
