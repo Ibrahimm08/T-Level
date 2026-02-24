@@ -26,6 +26,12 @@ Smart Contracts
 Artificial Inteligence
 Machine Learning Algorithms
 
+Useful Links:
+- [Guide to non functional requirements](https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/)
+- [List of 9 Legal Requirements for Websites and Tips to Meet Them](https://termly.io/resources/articles/legal-requirements-for-websites/#:~:text=If%20you%E2%80%99re%20building%20a%20website%2C%20you%20are%20going,Licensing%20and%20Attribution%208%20Anti-Spam%20Laws%20More%20items)
+- [Augmented Reality (AR) in Tourism & Travel | Rock Paper Reality](https://rockpaperreality.com/insights/ar-use-cases/augmented-reality-in-tourism-and-travel/)
+- [Create Interactive Maps Online | Mapize - Mapize](https://www.mapize.com/)
+
 ### **Business Context**
 - - [ ] Client Brief Review
 - - [ ] Stakeholders
