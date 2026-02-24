@@ -9,8 +9,6 @@ Cover:
 - Meeting diverse user needs
 - Industry specific guidelines
 
-Tips:
-
 Cover:
 - Use credible sources (industry reports, standards, tech blogs)
 - Organise notes under headings
@@ -18,34 +16,60 @@ Cover:
 - Include security considerations
 - Note relevant lawaws
 
+Helpful Software
+Augmented Reality
+Blockchain for Secure and Transparency
+Smart Contracts
+Artificial Inteligence
+Machine Learning Algorithms
 
 ### **Business Context**
 - - [ ] Client Brief Review
 - - [ ] Stakeholders
-- - [ ] Constraints
+- - [ ] Constraints and Scope
 - - [ ] Empathy Mapping
+  - Says, Thinks, Does, Feels
 - - [ ] SWOT Analysis
 - - [ ] User Stories & Acceptance
+  - As a {user}..., I want..., So that... 
 
 - [ ] **Functional & Non Functional Requirements**
--  - What the system must do & Performance, security, usability
+   - What the system must do, performance, security, usability, maintainability
+   - Can sort by page or list them
 
 - [ ] **Decomposition of Requirements**
+   - Decompose each page or a few requirements
 
 - [ ] **KPI's & User Acceptance**
+   - Reviews
+   - Customer satisfaction rate (surveys)
+   - Number of ...
+   - Repeat visitors
+   - Revenue growth
+   - Page load time
+   - Bounce rate (how many users interact with the site)
  
 ### **Proposed Solution**
-- [ ] **Description of Proposed Solution** 
+- [ ] **Description of Proposed Solution**
+   - What the website will include
+   - Features
+   - Experience
 
 ### **Justification**
-- [ ] **Meet the Client and User needs**
+- [ ] Meet the Client and User needs
+   - Mention what the client will see and do
+   - How it helps them and us
+   - What problems it solves 
 
-- [ ] **Risks, Mitigation & Wider Issues**
-
-- [ ] **Regulatory Guidelines and Legal Requirements**
-
-- [ ] **Appendix**
-
+- [ ] Risks, Mitigation & Wider Issues
+   - Information inaccuracy
+   - Miscommunication
+   - Data loss
+   - Data breaches
+- [ ] Regulatory Guidelines and Legal Requirements
+   - GDPR
+   - COPPA
+   - EU Cookie Law 
 
 ## Activity B Checklist
 
