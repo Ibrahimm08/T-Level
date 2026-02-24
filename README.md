@@ -16,6 +16,9 @@ Cover:
 - Include security considerations
 - Note relevant lawaws
 
+Contactless payments
+Voice Control
+Robots?
 Helpful Software
 Augmented Reality
 Blockchain for Secure and Transparency
