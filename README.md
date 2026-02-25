@@ -18,15 +18,15 @@ Cover:
 
 Can show how other websites or products made within the industry meet different user needs. Make sure to include screenshots and links to them.
 
-Contactless payments
-Voice Control
-Robots?
-Helpful Software
-Augmented Reality
-Blockchain for Secure and Transparency
-Smart Contracts
-Artificial Inteligence
-Machine Learning Algorithms
+- Contactless payments
+- Voice Control
+- Robots?
+- Helpful Software
+- Augmented Reality
+- Blockchain for Secure and Transparency
+- Smart Contracts
+- Artificial Inteligence
+- Machine Learning Algorithms
 
 Useful Links:
 - [Guide to non functional requirements](https://www.boxuk.com/insight/guide-to-non-functional-requirements-types-and-examples/)
