@@ -16,6 +16,8 @@ Cover:
 - Include security considerations
 - Note relevant lawaws
 
+Can show how other websites or products made within the industry meet different user needs. Make sure to include screenshots and links to them.
+
 Contactless payments
 Voice Control
 Robots?
