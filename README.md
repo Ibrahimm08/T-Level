@@ -85,14 +85,18 @@ Useful Links:
 ## Activity B Checklist
 
 ### Visual Interface Design
- - [ ] **Wireframes Created**
- - - [ ] Whitespace
- - - [ ] Hierarchy 
- - - [ ] Make look good
+ - [ ] **Wireframes Created** 
+   - [ ] Colour Scheme and Check with WebAIM
+   - [ ] Logo - What was used and Why chose the Design
+   - [ ] NavBar and Footer
+   - [ ] Individual Pages
+   - [ ] Show entire wireframe
 
  - [ ] **Accessibility Features Included**
  
  - [ ] **Annotations**
+   - Add numbers to refference elements of the wireframe
+   - Comment on choices made and why  
  
  - [ ] **User Journey**
  
@@ -102,13 +106,17 @@ Useful Links:
 
 ### Data Requirements
  - [ ] **ERD Completed**
+  - Data flow
 
  - [ ] **Use Case Diagram**
 
  - [ ] **Data Dictionary**
+  - Table, Column, Type, Format, PK?, FK?
 
 ### Algorithm Designs
 - [ ] **Flow charting**
+  - Show how sytems would work
+  - Use functions to simplify
 
 ### Test Stratagey
 - [ ] **Functionality Testing**  
