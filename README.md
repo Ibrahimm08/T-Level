@@ -93,12 +93,17 @@ Useful Links:
    - [ ] Show entire wireframe
 
  - [ ] **Accessibility Features Included**
+   - Include alt text and labels
+   - Allow users to adjust font size
+   - Contrast options 
  
  - [ ] **Annotations**
    - Add numbers to refference elements of the wireframe
    - Comment on choices made and why  
  
  - [ ] **User Journey**
+   - Personas (Name, Age, Role, Goal, Devices, Accessibility Needs, Quote)
+   - Journey (Action, Touchpoint, Thoughts, Pain Points, Opportunities) 
  
  - [ ] **Front end requirements**
  
@@ -119,6 +124,11 @@ Useful Links:
   - Use functions to simplify
 
 ### Test Stratagey
+  - Date of test
+  - Component to be tested
+  - Type of test to be carried out
+  - Prerequisites (something that must be done before) and dependencies (what it relies on)
+    
 - [ ] **Functionality Testing**  
   Verifies that each feature works according to requirements.
 
