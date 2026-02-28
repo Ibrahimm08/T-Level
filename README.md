@@ -220,6 +220,7 @@ Useful Links:
 - [ ] Complete triangulation (score + theme + quote)
 
 ### Survey
+- Use Microsoft, Google, or survey monkey
 - [ ] 5 Quantitative rating scale questions
 - [ ] 3-5 open ended questions
 - [ ] Questions linked to performance, code quality, logic reliability
@@ -228,7 +229,7 @@ Useful Links:
 - [ ] Easy to understand
 
 ### Observation
-- [ ]
+- Use [HotJar](https://hotjar.webflow.io/)
 
 
 ## Task 3b
