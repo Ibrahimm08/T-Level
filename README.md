@@ -177,7 +177,12 @@ Useful Links:
 
 ### Communication
 
-
+## Task 2
+- Identify and use normal, erroneous, and extreme test data 
+- Create a test table with expected outcomes 
+- Carry out iterative testing and record fixes 
+- Perform basic accessibility tests 
+- Understand and test for SQL injection vulnerabilities 
 
 ## Task 3a
 
