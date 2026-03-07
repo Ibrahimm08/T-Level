@@ -41,10 +41,21 @@ Useful Links:
   - What would they want in the solution
   - "I am proposing to develop... "
 - - [ ] Stakeholders
+  - Understand who we are working with and effecting
+  - Tailored and specialised to an audience
 - - [ ] Constraints and Scope
+  - Whys listing constraints and scopes are important
+  - Scope Creep
+  - Budget, Time, Technology, Compatibility, Laws
+  - Features and Functionality
 - - [ ] Empathy Mapping
   - Says, Thinks, Does, Feels
+  - Without the solution
 - - [ ] SWOT Analysis
+  - Strength
+  - Weakness
+  - Opportunities
+  - Threats
 - - [ ] User Stories & Acceptance
   - As a {user}..., I want..., So that...
   - Acceptance Criteria (features that we will include in the solution)
@@ -54,7 +65,7 @@ Useful Links:
    - Can sort by page or list them
 
 - [ ] **Decomposition of Requirements**
-   - Decompose each page or a few requirements
+   - Decompose each page or a requirements
 
 - [ ] **KPI's & User Acceptance**
    - Reviews
@@ -96,10 +107,12 @@ Useful Links:
 ### Visual Interface Design
  - [ ] **Wireframes Created** 
    - [ ] Colour Scheme and Check with WebAIM
+     - Provide hexidecimal codes and mention the use of coloors website 
    - [ ] Logo - What was used and Why chose the Design
    - [ ] NavBar and Footer
    - [ ] Individual Pages
    - [ ] Show entire wireframe
+   - [ ] Comment on wireframe design choices  (annotations) 
 
  - [ ] **Accessibility Features Included**
    - Include alt text and labels
