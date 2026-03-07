@@ -36,13 +36,18 @@ Useful Links:
 
 ### **Business Context**
 - - [ ] Client Brief Review
+  - Interested in digitalisation and why
+  - Client problems
+  - What would they want in the solution
+  - "I am proposing to develop... "
 - - [ ] Stakeholders
 - - [ ] Constraints and Scope
 - - [ ] Empathy Mapping
   - Says, Thinks, Does, Feels
 - - [ ] SWOT Analysis
 - - [ ] User Stories & Acceptance
-  - As a {user}..., I want..., So that... 
+  - As a {user}..., I want..., So that...
+  - Acceptance Criteria (features that we will include in the solution)
 
 - [ ] **Functional & Non Functional Requirements**
    - What the system must do, performance, security, usability, maintainability
