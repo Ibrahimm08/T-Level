@@ -43,14 +43,29 @@ Useful Links:
 - - [ ] Stakeholders
   - Understand who we are working with and effecting
   - Tailored and specialised to an audience
+  - Think:
+    - Media
+    - Staff
+    - Clients
+    - Community 
 - - [ ] Constraints and Scope
   - Whys listing constraints and scopes are important
   - Scope Creep
   - Budget, Time, Technology, Compatibility, Laws
   - Features and Functionality
 - - [ ] Empathy Mapping
+  - Think about:
+    - What customers care about
+    - Challenges they face
+    - What motivates them
+    - How the platform helps
   - Says, Thinks, Does, Feels
   - Without the solution
+  - "I need information"
+  - "Could I..." "So that..."
+  - "I wish..."
+  - "It would be easier if they had {feature}"
+  - Personalised Experience
 - - [ ] SWOT Analysis
   - Strength
   - Weakness
@@ -59,13 +74,21 @@ Useful Links:
 - - [ ] User Stories & Acceptance
   - As a {user}..., I want..., So that...
   - Acceptance Criteria (features that we will include in the solution)
+  - Find information
+  - Compare with competitors
+  - Easier management
 
 - [ ] **Functional & Non Functional Requirements**
    - What the system must do, performance, security, usability, maintainability
    - Can sort by page or list them
 
 - [ ] **Decomposition of Requirements**
+   - Define Decomposition and why you are doint it
+     - Claity In System Architecture - how components interact
+     - Improved Dev workflow
+     - User Experience - ensure all is logical sturcture 
    - Decompose each page or a requirements
+   - Could do like a tree thing with all the pages and what they would contain
 
 - [ ] **KPI's & User Acceptance**
    - Reviews
@@ -202,6 +225,9 @@ Useful Links:
 - Perform basic accessibility tests 
 - Understand and test for SQL injection vulnerabilities 
 
+
+#### Suddenly One Day... My PHP was Gone
+
 ## Task 3a
 
 ### Aims and Purpose
@@ -290,4 +316,5 @@ Useful Links:
 - [ ] Professional wording
 - [ ] Full sentences and paragraphs
 - [ ] No bullet-point-only answers
+
 
