@@ -68,10 +68,10 @@ Useful Links:
   - "It would be easier if they had {feature}"
   - Personalised Experience
 - - [ ] SWOT Analysis
-  - Strength
-  - Weakness
-  - Opportunities
-  - Threats
+  - Strength - loyal customers
+  - Weakness - no digitalisation
+  - Opportunities - support community
+  - Threats - competitors 
 - - [ ] User Stories & Acceptance
   - As a {user}..., I want..., So that...
   - Acceptance Criteria (features that we will include in the solution)
@@ -81,17 +81,27 @@ Useful Links:
 
 - [ ] **Functional & Non Functional Requirements**
    - What the system must do, performance, security, usability, maintainability
-   - Can sort by page or list them
+   - Can sort by page or list them 
+   - RBAC
+   - Management
+   - Organised and searchable format
    - Bycrypt
    - Secure Cookies
    - Validation
    - User Inputs requirement
+   - Good coding practices
+   - Page speed/load
+   - Latency
+   - API calls
+   - usable with only keyboard
+   - high contrast and adjustable font size
+   - Screen reader friendly
 
 - [ ] **Decomposition of Requirements**
    - Define Decomposition and why you are doint it
-     - Claity In System Architecture - how components interact
-     - Improved Dev workflow
-     - User Experience - ensure all is logical sturcture 
+     - Claity In System Architecture - how major components interact within the platform
+     - Improved Dev workflow - allows development teams to work on different sections independently
+     - User Experience - ensure all needs are logically structured for navigation
    - Decompose each page or a requirements
    - Could do like a tree thing with all the pages and what they would contain
 
@@ -103,6 +113,12 @@ Useful Links:
    - Revenue growth
    - Page load time
    - Bounce rate (how many users interact with the site)
+   - session duration
+   - Feedback score
+   - Revenue Growth
+   - Page load speed
+   - Usage and feedback of accessibility features
+   - Can users register
  
 ### **Proposed Solution**
 - [ ] **Description of Proposed Solution**
