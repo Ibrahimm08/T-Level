@@ -178,7 +178,7 @@ Useful Links:
 
 ### Data Requirements
  - [ ] **ERD Completed**
-  - Data flow
+ - [ ] **Data flow**
 
  - [ ] **Use Case Diagram**
 
