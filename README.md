@@ -248,6 +248,24 @@ Useful Links:
 - Understand and test for SQL injection vulnerabilities 
 
 
+### Notes
+- from flask import Flask, request, render_template, redirect, session
+- import mysql.connector
+- import sqlite3
+- import bcrypt
+- app = Flask(__name__)
+- conn = sqlite3.connect(DB)
+- conn executescript()  PATH.readtext()
+- cursor = conn.cursor()
+- cursor execute PRAGMA foreign_keys - ON;
+- cursor.close()
+- conn.close()
+- @app.route("/") methods
+- return render_template
+- session.get(,{})
+- __name__ == "__main__"
+- app.run(debug=true)
+
 #### Suddenly One Day... My PHP was Gone
 
 ## Task 3a
