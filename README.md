@@ -265,6 +265,8 @@ Useful Links:
 - session.get(,{})
 - __name__ == "__main__"
 - app.run(debug=true)
+- Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
+
 
 #### Suddenly One Day... My PHP was Gone
 
