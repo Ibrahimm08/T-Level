@@ -249,6 +249,7 @@ Useful Links:
 
 
 ### Notes
+#### Python
 - from flask import Flask, request, render_template, redirect, session
 - import mysql.connector
 - import sqlite3
@@ -262,11 +263,20 @@ Useful Links:
 - conn.close()
 - @app.route("/") methods
 - return render_template
-- session.get(,{})
+- session.get("nameHere",{})
+- conn.execute(query,values)  (.fetchone)
 - __name__ == "__main__"
 - app.run(debug=true)
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
-
+#### SQL 
+- Have PRAGMA foreign_keys set to on
+- Create table if not exists table_name ();
+- integer autoincrement
+- varchar()
+- nvarchar() - more languages and unicode symbols (more storage space required)
+- decimal (4,2)
+- foreign key (column in this table) references tablename (column in that table) on delete cascade
+- primary key (column, column, column)
 
 #### Suddenly One Day... My PHP was Gone
 
