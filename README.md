@@ -249,6 +249,11 @@ Useful Links:
 
 
 ### Notes
+#### Extensions
+- Prettier - code formatter
+- Prettier SQL VScode
+- SQLite3 Editor - don't close the db tab, use history for insert statments incase need to rebuild db  
+  
 #### Python
 - from flask import Flask, request, render_template, redirect, session
 - import mysql.connector
