@@ -285,6 +285,8 @@ Useful Links:
 - conn.execute(query,values)  (.fetchone)
 - __name__ == "__main__"
 - app.run(debug=true)
+- if request.method == "POST":
+-  thing = request.form.get("name")
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
 #### SQL 
 - Have PRAGMA foreign_keys set to on
