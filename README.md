@@ -247,12 +247,25 @@ Useful Links:
 - Perform basic accessibility tests 
 - Understand and test for SQL injection vulnerabilities 
 
-
+### Document
+ - [ ] Test Log
+   - description of test
+   - Test data to be used
+   - Expected outcome
+   - actual outcome
+   - coments and actions
+ - [ ] Asset Log
+   - Asset name
+   - Source
+   - Where it is used within the prototype
+   - example
+ - [ ] Change log
 ### Notes
 #### Extensions
 - Prettier - code formatter
 - Prettier SQL VScode
 - SQLite3 Editor - don't close the db tab, use history for insert statments incase need to rebuild db  
+- Google pfonts 
   
 #### Python
 - from flask import Flask, request, render_template, redirect, session
