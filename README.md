@@ -288,6 +288,7 @@ Useful Links:
 - if request.method == "POST":
 -  thing = request.form.get("name")
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
+- insert query ("Insert into table (columns) values(?")
 #### SQL 
 - Have PRAGMA foreign_keys set to on
 - Create table if not exists table_name ();
