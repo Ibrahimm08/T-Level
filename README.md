@@ -289,6 +289,9 @@ Useful Links:
 -  thing = request.form.get("name")
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
 - insert query ("Insert into table (columns) values(?")
+- ("/route/< int:id >) function will have paramaeter called id
+- href /route/{{ variable }} 
+  
 #### SQL 
 - Have PRAGMA foreign_keys set to on
 - Create table if not exists table_name ();
