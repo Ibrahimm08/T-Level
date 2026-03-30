@@ -301,6 +301,10 @@ Useful Links:
 - decimal (4,2)
 - foreign key (column in this table) references tablename (column in that table) on delete cascade
 - primary key (column, column, column)
+- INSERT INTO target_table (column1, column2, ...)
+- SELECT column1, column2, ...
+- FROM source_table
+- WHERE condition;
 
 #### Suddenly One Day... My PHP was Gone
 
