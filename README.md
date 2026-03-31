@@ -305,6 +305,7 @@ Useful Links:
 - SELECT column1, column2, ...
 - FROM source_table
 - WHERE condition;
+- last_insert_rowid()
 
 #### Suddenly One Day... My PHP was Gone
 
