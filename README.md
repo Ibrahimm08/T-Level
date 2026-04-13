@@ -265,7 +265,9 @@ Useful Links:
 - Prettier - code formatter
 - Prettier SQL VScode
 - SQLite3 Editor - don't close the db tab, use history for insert statments incase need to rebuild db  
-- Google pfonts 
+- Google pfonts
+- Pexels (free images to use)
+- [Bootstrap Tutorial](https://www.w3schools.com/bootstrap5/)
   
 #### Python
 - from flask import Flask, request, render_template, redirect, session
