@@ -290,7 +290,8 @@ Useful Links:
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
 - insert query ("Insert into table (columns) values(?")
 - ("/route/< int:id >) function will have paramaeter called id
-- href /route/{{ variable }} 
+- href /route/{{ variable }}
+- "String".join(Tuple or list)
   
 #### SQL 
 - Have PRAGMA foreign_keys set to on
