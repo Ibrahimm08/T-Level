@@ -261,13 +261,14 @@ Useful Links:
    - example
  - [ ] Change log
 ### Notes
-#### Extensions
+#### Extensions, Tools, and Assets
 - Prettier - code formatter
 - Prettier SQL VScode
 - SQLite3 Editor - don't close the db tab, use history for insert statments incase need to rebuild db  
 - Google pfonts
 - Pexels (free images to use)
 - [Bootstrap Tutorial](https://www.w3schools.com/bootstrap5/)
+- [Bootstrap Tutorial](https://getbootstrap.com/docs/5.0/components/buttons/)
 
 #### Bootstrap Class Names
 - Responsive Horizontal Navbar
