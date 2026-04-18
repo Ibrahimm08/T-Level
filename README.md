@@ -312,7 +312,7 @@ Useful Links:
 - app.run(debug=true)
 - if request.method == "POST":
 -  thing = request.form.get("name")
--  request.file["name"]
+-  request.file.get["name"]
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
 - insert query ("Insert into table (columns) values(?")
 - ("/route/< int:id >) function will have paramaeter called id
