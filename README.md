@@ -274,6 +274,8 @@ Useful Links:
 - import mysql.connector
 - import sqlite3
 - import bcrypt
+- import os
+- from werkzeug.utils import secure_filename
 - app = Flask(__name__)
 - conn = sqlite3.connect(DB)
 - conn executescript()  PATH.readtext()
@@ -294,6 +296,10 @@ Useful Links:
 - ("/route/< int:id >) function will have paramaeter called id
 - href /route/{{ variable }}
 - "String".join(Tuple or list)
+- os.makedirs(path, exist_ok=True)  creates a path if not exists
+- secure_filename(filename)  prevent path traversal
+- os.path.join(app.config[], filename) 
+- file.save(filepath)
   
 #### SQL 
 - Have PRAGMA foreign_keys set to on
