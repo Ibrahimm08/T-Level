@@ -268,7 +268,28 @@ Useful Links:
 - Google pfonts
 - Pexels (free images to use)
 - [Bootstrap Tutorial](https://www.w3schools.com/bootstrap5/)
-  
+
+#### Bootstrap Class Names
+- Responsive Horizontal Navbar
+  -  navbar navbar-expand-*
+  -  container
+  -  navbar-brand
+  -  navbar-toggler
+  -  data-bs-toggle collapse
+  -  data-bs-target #ID
+  -  collapse
+  -  navbar-collapse
+  -  navbar-nav -> nav-item -> nav-link
+- Responsive Vertical Navbar
+  -  data-bs-toggle offcanvas
+  -  data-bs-target #ID
+  -  d-none d-lg-flex
+  -  offcanvas
+  -  offcanvas-start
+  -  offcanvas-header
+  -  offcanvas-title
+  -  offcanvas-body
+
 #### Python
 - from flask import Flask, request, render_template, redirect, session
 - import mysql.connector
@@ -291,6 +312,7 @@ Useful Links:
 - app.run(debug=true)
 - if request.method == "POST":
 -  thing = request.form.get("name")
+-  request.file["name"]
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
 - insert query ("Insert into table (columns) values(?")
 - ("/route/< int:id >) function will have paramaeter called id
@@ -300,6 +322,7 @@ Useful Links:
 - secure_filename(filename)  prevent path traversal
 - os.path.join(app.config[], filename) 
 - file.save(filepath)
+- .rsplit(char, int)
   
 #### SQL 
 - Have PRAGMA foreign_keys set to on
