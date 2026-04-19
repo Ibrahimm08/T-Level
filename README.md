@@ -270,6 +270,19 @@ Useful Links:
 - [Bootstrap Tutorial](https://www.w3schools.com/bootstrap5/)
 - [Bootstrap Tutorial](https://getbootstrap.com/docs/5.0/components/buttons/)
 
+
+#### Regex
+- ?=.* positive look ahead
+- ^ start at beggining [^..] not these characters
+- ([ character class ])
+- {rangeStart, rangeEnd} rangeEnd is optional, determines how long the string has to be
+- [] with no () - only allowed characters within the string
+- $ at end no extra characters allowed
+- \s whitespace
+- {+} one or more characters
+- \. literal dot
+  
+
 #### Bootstrap Class Names
 - Responsive Horizontal Navbar
   -  navbar navbar-expand-*
@@ -297,6 +310,7 @@ Useful Links:
 - import sqlite3
 - import bcrypt
 - import os
+- import re - allows to use regex in python via re.compile (r"....")
 - from werkzeug.utils import secure_filename
 - app = Flask(__name__)
 - conn = sqlite3.connect(DB)
@@ -315,7 +329,7 @@ Useful Links:
 -  thing = request.form.get("name")
 -  request.file.get["name"]
 - Avoid hardcoding - use {{ url_for('folder or route', filename='') }} filename optional
-- insert query ("Insert into table (columns) values(?")
+- insert query ("Insert into table (columns) values(?)")
 - ("/route/< int:id >) function will have paramaeter called id
 - href /route/{{ variable }}
 - "String".join(Tuple or list)
