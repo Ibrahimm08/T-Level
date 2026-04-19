@@ -303,6 +303,10 @@ Useful Links:
   -  offcanvas-header
   -  offcanvas-title
   -  offcanvas-body
+- radios and checkboxes
+  - btn-check
+  - id name
+  - for name  
 
 #### Python
 - from flask import Flask, request, render_template, redirect, session
