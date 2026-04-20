@@ -281,6 +281,7 @@ Useful Links:
 - \s whitespace
 - {+} one or more characters
 - \. literal dot
+- eg password pattern would have ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
   
 
 #### Bootstrap Class Names
