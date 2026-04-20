@@ -295,13 +295,13 @@ Useful Links:
   -  navbar-collapse
   -  navbar-nav -> nav-item -> nav-link
 - Responsive Vertical Navbar
+  -  a button
   -  data-bs-toggle offcanvas
   -  data-bs-target #ID
-  -  d-none d-lg-flex
-  -  offcanvas
+  -  nav d-none d-lg-flex flex column
+  -  div offcanvas offcanvas-start id mobileSidebar
   -  offcanvas-start
-  -  offcanvas-header
-  -  offcanvas-title
+  -  offcanvas-header -> offcanvas-title and btn-close data-bs-dismiss offcanvas
   -  offcanvas-body
 - radios and checkboxes
   - btn-check
