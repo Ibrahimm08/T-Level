@@ -460,7 +460,15 @@ Useful Links:
 - what they reported afterwards
 - Broader questions
 
-
+### Notes
+- Which areas scored the highest
+- What behaviours showed ease of use
+- Which themes were positive
+- Compare technical vs Non-Technical Users
+  - How each group scored features
+  - Which group struggled more
+  - Why their experiences were differnt
+  - What this tells us about the prototype 
 ## Task 3b
 
 ### Assets & Content
