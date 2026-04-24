@@ -431,6 +431,10 @@ Useful Links:
 - [ ] Compare technical vs non technical users
 - [ ] Complete triangulation (score + theme + quote)
 - [ ] How this is used to identify trends
+- [ ] How we can prioritise future improvements
+    - Themes
+    - Low/high scoring questions
+    - Recurring issues
 
 ### Survey
 - Use Microsoft, Google, or survey monkey
