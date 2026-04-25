@@ -528,7 +528,7 @@ Useful Links:
 - [ ] List realistic improvements
 - [ ] Each improvement supported by Task 3a evidence
 - [ ] Explain why improvements matter
-- [ ] Show hoe improvements help users
+- [ ] Show how improvements help users
 
 ### Writing Quality
 
