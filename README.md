@@ -484,6 +484,12 @@ Useful Links:
   - Add qualitative explanation  "Interviews showed repeated confusion about menu labels"
   - Add observation confirmation  " Three users clicked the wrong page before finding correct one"
   - Interpret it  "This shows navigation is unclear and needs redesign"
+- Final Summary
+  - What worked well
+  - What didn't work
+  - What differences existed
+  - What the data as a whole suggests
+  - Which areas need improvement  
 
 ### Notes
 - Which areas scored the highest
