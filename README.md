@@ -1,5 +1,5 @@
 
-# T-Level-Exam Thing
+# T-Level-Exam Notes and Checklist
 
 ## Activity A Checklist
 
@@ -423,19 +423,6 @@ Useful Links:
     - Observation -> what actually happens
     - Resolve contradictions  
 
-### Data analysis
-**Explain How You Will**
-- [ ] Calculate averages/ compare scores
-- [ ] Identify lowest scoring questions
-- [ ] Group interview comments into themes
-- [ ] Compare technical vs non technical users
-- [ ] Complete triangulation (score + theme + quote)
-- [ ] How this is used to identify trends
-- [ ] How we can prioritise future improvements
-    - Themes
-    - Low/high scoring questions
-    - Recurring issues
-
 ### Survey
 - Use Microsoft, Google, or survey monkey
 - [ ] 5 Quantitative rating scale questions
@@ -460,6 +447,44 @@ Useful Links:
 - what they reported afterwards
 - Broader questions
 
+
+### Data analysis
+**Explain How You Will**
+- [ ] Calculate averages/ compare scores
+- [ ] Identify lowest scoring questions
+- [ ] Group interview comments into themes
+- [ ] Compare technical vs non technical users
+- [ ] Complete triangulation (score + theme + quote)
+- [ ] How this is used to identify trends
+- [ ] How we can prioritise future improvements
+    - Themes
+    - Low/high scoring questions
+    - Recurring issues
+- Organise Feedback
+- Calculate scores
+- Look for patterns
+- Compare Users
+- Qualitative (themes/Comments)
+  - Navigation
+  - LAyout
+  - Accessibility
+  - Performance
+  - Visual Design
+  - Mobile Responsiveness
+  - Clarity of Content
+  - COunt frequency
+  - Slect representavies
+  - Interpret them
+- Strenghts and weaknesses
+- Technical Vs Non-Technical Users
+- Triangulate
+  - Low Score + Theme + Quote/Observation
+- Write Analysis
+  - Present Quatitative evidence  "Navigation scored 2.4/5 from non-technical users"
+  - Add qualitative explanation  "Interviews showed repeated confusion about menu labels"
+  - Add observation confirmation  " Three users clicked the wrong page before finding correct one"
+  - Interpret it  "This shows navigation is unclear and needs redesign"
+
 ### Notes
 - Which areas scored the highest
 - What behaviours showed ease of use
@@ -468,7 +493,8 @@ Useful Links:
   - How each group scored features
   - Which group struggled more
   - Why their experiences were differnt
-  - What this tells us about the prototype 
+  - What this tells us about the prototype
+ 
 ## Task 3b
 
 ### Assets & Content
