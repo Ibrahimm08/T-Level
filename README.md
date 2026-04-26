@@ -364,6 +364,11 @@ Useful Links:
 
 ## Task 3a
 
+### Parts of this Task
+- Feedback planning
+- Feedback Questions
+- Data Analysis
+
 ### Aims and Purpose
 - [ ] Explain why we collect feedback
   -  pain point
@@ -380,6 +385,8 @@ Useful Links:
 ### Target Users
 - [ ] Technical users identified (role and number)
   - How many, and why
+  - Age ranges
+  - Experience level
   - Reliability
   - Reducing Bias 
 - [ ] Non-Technical users identified
@@ -425,6 +432,7 @@ Useful Links:
 
 ### Survey
 - Use Microsoft, Google, or survey monkey
+- State what scores were and why they occurred
 - [ ] 5 Quantitative rating scale questions
 - [ ] 3-5 open ended questions
 - [ ] Questions linked to performance, code quality, logic reliability
