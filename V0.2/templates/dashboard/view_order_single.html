@@ -1,0 +1,37 @@
+{% extends "dashboard_base.html" %} {% block content %}
+
+<div class="order-list">
+  <h3>Order # {{item_list[0][-1]}}</h3>
+  <table>
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Amount</th>
+      <th>Total</th>
+    </tr>
+
+    <!--customerID, ProductID, Ammount, ID , ProductName, Description, Cost, Unit, Stock, Method, DeliveryAvailable, Collection Available -->
+    {% for row in item_list %}
+    <tr>
+      <td>
+        <!-- Name -->
+        {{row[1]}}
+      </td>
+      <td>
+        <!-- Price -->
+        £{{row[3]}}
+      </td>
+      <td>
+        <!-- Amount -->
+        {{row[-3]}}
+      </td>
+      <td>
+        <!-- Total -->
+        £{{row[3] * row[-3]}}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <h3>Total: £{{total[0]}}</h3>
+</div>
+{% endblock %}

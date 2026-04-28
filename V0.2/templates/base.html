@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page_name}}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/style.css')}}"
+    />
+
+    <script
+      src="{{url_for('static', filename='scripts/script.js')}}"
+      defer
+    ></script>
+
+    <!-- BOOTSTRAP 5 CDN -->
+    <!-- Documentation: https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- BOOTSTRAP 5 CDN -->
+
+    {% block style %} {% endblock %}
+  </head>
+  <body>
+    <div class="top container-fluid">
+      <p class="row float-end mb-0 me-5 text-nowrap">
+        <span class="col me-5"
+          >!NOTICE! <b>Prototype in development </b> !NOTICE!</span
+        >
+        <span class="col"><strong> phone icon: 0000 0000 0000</strong></span>
+        <span class="col"
+          ><strong> Email icon: example@domain.com</strong></span
+        >
+      </p>
+    </div>
+    <nav class="container-fluid position-sticky top-0 navbar navbar-expand-lg">
+      <div class="container-fluid bottom">
+        <div class="navbar-brand d-flex align-items-center">
+          <!-- Insert Company Logo Here Later -->
+          <img src="" alt="Logo Here" />
+          | Greenfeild Local Hub
+        </div>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navCollapse">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('Index')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('About')}}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('Products')}}">Products</a>
+            </li>
+
+            <!-- Checks if user is logged in and which account type they have to display links to cart/dashboard -->
+            {% if session.user %} {% if session.type == "CustomerAccount" %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('Cart')}}">View Cart</a>
+            </li>
+            {% endif %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('Dashboard')}}">Dashboard</a>
+            </li>
+            <!-- replace with icon later -->
+            {% else %}
+            <li class="nav-item me-lg-1 mb-lg-0 mb-1">
+              <a class="btn-text" href="{{url_for('Login')}}">
+                <button class="btn btn-outline-success">Login</button>
+              </a>
+            </li>
+            <li class="nav-item me-lg-2 mb-lg-0 mb-1">
+              <a class="btn-text" href="{{url_for('Register')}}">
+                <button class="btn btn-outline-warning">Register</button>
+              </a>
+            </li>
+            {% endif %}
+
+            <!-- Accessibility Button -->
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sideOffcanvas"
+              >
+                <!-- Accessibility icon here -->
+                <!-- Sourced from https://icons.getbootstrap.com/icons/universal-access/ -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-universal-access"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Accessibility Offcanvas -->
+    <div class="offcanvas offcanvas-end" id="sideOffcanvas">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title"><h2>Accessibility Options</h2></div>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <button class="btn-outline-primary" onclick="ToggleFont()">
+          Toggle MonoFont
+        </button>
+      </div>
+    </div>
+
+    <!-- Allows us to insert unique content for different pages here -->
+    {% block content %} {% endblock %}
+
+    <!-- Footer Content Here -->
+  </body>
+</html>

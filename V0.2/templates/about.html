@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+<!-- Link stylesheet for page in header -->
+{% block style %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='styles/about.css')}}"
+/>
+{% endblock %}
+
+<!-- Add Content on Base -->
+{% block content %}
+
+<!-- Hero -->
+<div class="hero container-fluid">
+  <!-- Add image -->
+  <img src="" alt="Background image" />
+
+  <!-- Placed infront of image -->
+  <!-- Change if needed -->
+  <div class="container hero-text">
+    <h2>About Us</h2>
+    <!-- Button leading to contact info, popupform, or email link -->
+  </div>
+  <a href="" class="p-5"
+    ><button class="btn btn-primary text-nowrap">Contact Us</button></a
+  >
+</div>
+
+<div class="container">
+  <!-- Section What We Do -->
+  <div class="section-one mt-5">
+    <h4>What We Do</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at qui
+      alias beatae itaque laudantium necessitatibus sint nemo sunt saepe
+      eligendi maiores mollitia ex, ducimus porro! Eum fugit neque mollitia!
+    </p>
+  </div>
+
+  <!-- Section Goals and Values -->
+  <div class="section-two row gap-4 justify-content-center">
+    <!-- Img on left and content on right -->
+    <img class="col" src="" alt="Placeholder" />
+
+    <div class="col">
+      <h4>Our Goals and Values</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci
+        cum maxime suscipit molestiae labore possimus totam dignissimos
+        accusantium, doloribus, blanditiis numquam beatae quibusdam, fugit optio
+        iusto obcaecati reprehenderit rerum.
+      </p>
+    </div>
+  </div>
+
+  <!-- Section Supporting local farmers -->
+  <div class="section-three">
+    <h4>Suport our Local Farmers</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quaerat,
+      itaque iusto, asperiores quo esse illum, est ipsam impedit nostrum
+      sapiente architecto ipsum. Quas odit minima, ut quia ullam odio?
+    </p>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nostrum
+        voluptatem minus odit eveniet voluptates molestiae cupiditate, beatae
+        tempore sit magnam delectus, repellat omnis ex fuga accusamus sapiente
+        laboriosam molestias!
+      </p>
+      <img src="" alt="Placeholder" />
+    </div>
+  </div>
+
+  <!-- Section Location of GLH using GoogleMaps embed or Mapzie -->
+  <div class="section-four">
+    <h4>Come Find Us</h4>
+    <!-- Embed Here -->
+    <p>(Prototype Embed interactive map here)</p>
+  </div>
+</div>
+
+{% endblock %}

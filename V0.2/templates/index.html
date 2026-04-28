@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+<!-- Link stylesheet for page in header -->
+{% block style %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='styles/index.css')}}"
+/>
+{% endblock %}
+
+<!-- Add Content on Base -->
+{% block content %}
+
+<!-- Hero -->
+<div class="hero container-fluid">
+  <!-- Add image -->
+  <img src="" alt="Background image" />
+
+  <!-- Brand + Slogan placed infront of image -->
+  <!-- Change if needed -->
+  <div class="hero-text container">
+    <h2>Greenfeild Local Hub</h2>
+    <!-- &emsp; tab 4 spaces based on font size -->
+    <h3 class="mt-3 mb-3">&emsp; Helping Our Farmers, Our Community</h3>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <!-- Section Who are we  -->
+  <div class="section-one row justify-content-center gap-4">
+    <!-- Img placed on left side while content placed on right -->
+    <img class="col-md" src="" alt="Placeholder" />
+
+    <!-- Content -->
+    <div class="col-md">
+      <h3>Who Are We</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        ipsum maiores sapiente! Necessitatibus placeat dolorem nulla expedita
+        optio eum eligendi! Hic ratisection-box one, sit quod illum quam error
+        quidem soluta enim?
+      </p>
+    </div>
+  </div>
+
+  <!-- Section What We Offer -->
+  <div class="section-two mt-5 row text-center justify-content-center pt-5">
+    <div class="header">
+      <h3>What We Offer</h3>
+      <p class="w-75">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vero
+        voluptates eaque beatae nesciunt placeat delectus harum id itaque
+        expedita vitae laboriosam deserunt, possimus non autem officia, velit
+        sunt? Neque!
+      </p>
+    </div>
+
+    <!-- Box Sections with headers and description under -->
+    <div class="section-collection row">
+      <!-- Left Part -->
+      <div class="section-box col-md">
+        <h3 class="section-box-head">Customers</h3>
+        <div>
+          <img src="" alt="Placeholder" />
+        </div>
+        <!-- Description -->
+        <p class="text-md-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          blanditiis minus, debitis magni officiis nisi, sequi nam voluptatibus
+          tenetur commodi quidem consectetur eius iusto quis cumque repellendus
+          quibusdam ipsa! Maiores.
+        </p>
+      </div>
+
+      <!-- Right part -->
+      <div class="section-box col-md">
+        <h3 class="section-box-head">Farmers & Food Producers</h3>
+        <div>
+          <img src="" alt="Placeholder" />
+        </div>
+        <!-- Description -->
+        <p class="text-md-end">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          blanditiis minus, debitis magni officiis nisi, sequi nam voluptatibus
+          tenetur commodi quidem consectetur eius iusto quis cumque repellendus
+          quibusdam ipsa! Maiores.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Services we provide -->
+  <div class="section-three text-center">
+    <h3 class="mb-md-5">Providing you with great services and great food</h3>
+
+    <!-- Section split into three parts containing boxes -->
+    <div class="section-collection gap-5 row justify-content-center">
+      <!-- Individual box -->
+      <div class="col-md">
+        <!-- Icon or image -->
+        <img src="" alt="Placeholder" />
+        <p class="text-md-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, at
+          pariatur, nemo praesentium accusamus provident recusandae inventore
+          beatae sapiente dolorum aspernatur tenetur ipsa, laboriosam temporibus
+          nobis minima distinctio voluptatem.
+        </p>
+      </div>
+
+      <!-- Individual box -->
+      <div class="col-md">
+        <!-- Icon or image -->
+        <img src="" alt="Placeholder" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, at
+          pariatur, nemo praesentium accusamus provident recusandae inventore
+          beatae sapiente dolorum aspernatur tenetur ipsa, laboriosam temporibus
+          nobis minima distinctio voluptatem.
+        </p>
+      </div>
+
+      <!-- Individual box -->
+      <div class="col-md">
+        <!-- Icon or image -->
+        <img src="" alt="Placeholder" />
+        <p class="text-md-end">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex id, at
+          pariatur, nemo praesentium accusamus provident recusandae inventore
+          beatae sapiente dolorum aspernatur tenetur ipsa, laboriosam temporibus
+          nobis minima distinctio voluptatem.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section prompting user to create an account or login -->
+
+  <div class="section-four text-center">
+    <h3 class="header">Join Us Now</h3>
+
+    <!-- Section split into two -->
+    <div class="section-collection container justify-content-center gap-5 row">
+      <!-- Individual section -->
+      <div class="col-md d-flex flex-column align-items-center">
+        <h5 class="section-box-head">Become a Member</h5>
+        <!-- Image with button leading to register page -->
+        <div class="section-box customer">
+          <img src="" alt="Placeholder" />
+          <a href="{{url_for('Register')}}">
+            <button class="btn btn-primary btn-register">Register</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Individual section -->
+      <div class="col-md d-flex flex-column align-items-center">
+        <h5 class="section-box-head">Set up Your Market</h5>
+        <!-- Image with button leading to register page -->
+        <div class="section-box business">
+          <img src="" alt="Placeholder" />
+          <a href="{{url_for('Register')}}">
+            <button class="btn btn-primary btn-register">Register</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

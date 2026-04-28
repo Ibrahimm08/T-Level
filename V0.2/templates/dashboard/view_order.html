@@ -1,0 +1,67 @@
+{% extends "dashboard_base.html" %} {% block content %}
+
+<div class="orders">
+  <h2>Orders</h2>
+  <table>
+    <tr>
+      <th>Order #</th>
+      <th>Date Made</th>
+      <th>Total</th>
+      <th>Status</th>
+      <th>Type</th>
+      <th>
+        <!-- Empty column for controls -->
+      </th>
+    </tr>
+
+    {% for row in orders %}
+    <tr>
+      <td>
+        <!-- ID -->
+        {{row[0]}}
+      </td>
+      <td>
+        <!-- DateMade -->
+        {{row[2]}}
+      </td>
+      <td>
+        <!-- Total -->
+        £{{row[5]}}
+      </td>
+      <td>
+        <!-- Status -->
+        {{row[3]}}
+      </td>
+
+      <td>
+        <!-- Type  -->
+        {{row[4]}}
+      </td>
+
+      <td>
+        <a href="/view-order/{{row[0]}}">
+          <button>View</button>
+        </a>
+        {% if row[3] != "Cancelled" %} {% if row[3] != "Completed" %}
+
+        <!-- Show if user is business account -->
+        {% if session.type == "BusinessAccount" %}
+        <a href="/edit-order/{{row[0]}}">
+          <button>Update Status</button>
+        </a>
+
+        {% else %}
+
+        <!-- Give notice cancelling orders is irreversible -->
+        <a href="/cancel-order/{{row[0]}}">
+          <button>Cancel</button>
+        </a>
+
+        {% endif %} {% endif %} {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "dashboard_base.html" %} {% block content %}
+
+<div>
+  <h1>{{page_name}}</h1>
+  <h3>{{error_msg}}</h3>
+</div>
+
+<div class="product-form">
+  <form action="/add-product" class="container" method="POST">
+    <a href="{{url_for('ViewProduct')}}">
+      <button type="button" class="btn btn-danger">Cancel</button>
+    </a>
+
+    <button type="submit" class="btn btn-success ms-4">Submit</button>
+
+    <div class="mt-5 input-group">
+      <label for="name" class="input-group-text">Product Name</label>
+      <input type="text" name="name" id="name" class="form-control" required />
+    </div>
+
+    <div>
+      <div>
+        <label for="category">Category</label>
+        <select class="form-select" name="category" id="category">
+          {% for row in categories %}
+          <option value="{{row[0]}}">{{row[1]}}</option>
+          {% endfor %}
+        </select>
+        <label for="desc">Product Description</label>
+        <textarea
+          name="desc"
+          id="desc"
+          class="form-control"
+          placeholder="Enter Description"
+          required
+        ></textarea>
+
+        <label for="allergen">Allergens and Dietary Info</label>
+        <textarea
+          name="allergen"
+          id="allergen"
+          class="form-control"
+          placeholder='"No Allergens"'
+        ></textarea>
+      </div>
+
+      <div class="price-box">
+        <label for="price">Price (£)</label>
+        <input
+          type="number"
+          name="price"
+          max="999.99"
+          min="1"
+          value="0"
+          id="price"
+          class="form-control"
+          required
+        />
+
+        <label for="unit">Units</label>
+        <input
+          type="text"
+          name="unit"
+          id="unit"
+          class="form-control"
+          placeholder="£/kg"
+          required
+        />
+
+        <label for="stock">Stock/Amount</label>
+        <input
+          type="number"
+          name="stock"
+          required
+          max="999"
+          min="1"
+          id="stock"
+          class="form-control"
+        />
+
+        <div class="form-check">
+          <label class="form-check-label" for="delivery">
+            Delivery Available?
+          </label>
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="delivery"
+            id="delivery"
+          />
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="collection">
+            Collection Available?
+          </label>
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="collection"
+            id="collection"
+          />
+        </div>
+      </div>
+    </div>
+
+    <label for="method">Product Method</label>
+    <textarea
+      name="method"
+      id="method"
+      class="form-control"
+      placeholder="Enter how you farmed/harvested/produced/refined the product"
+      required
+    ></textarea>
+  </form>
+</div>
+{% endblock %}

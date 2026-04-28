@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block content %}
+
+<!-- For testing purposes will adjust later -->
+
+{% if error_msg %}
+<div class="alert alert-warning" role="alert">{{error_msg}}</div>
+{% endif %}
+
+<form
+  class="container"
+  onsubmit="return ValidatePassword();"
+  name="register-form"
+  id="register-form"
+  action="/register"
+  method="POST"
+>
+  <div>
+    <input
+      class="btn-check"
+      type="radio"
+      name="account-type"
+      id="account-type-c"
+      value="CustomerAccount"
+      checked
+    />
+    <label class="btn btn-outline-primary" for="account-type-c">Customer</label>
+    <input
+      class="btn-check"
+      type="radio"
+      name="account-type"
+      id="account-type-b"
+      value="BusinessAccount"
+    />
+    <label class="btn btn-outline-primary" for="account-type-b">Business</label>
+  </div>
+
+  <div>
+    <label for="name">Full Name</label>
+    <input class="form-control" type="text" name="name" id="name" required />
+
+    <label for="email">Email</label>
+    <input class="form-control" type="email" name="email" id="email" required />
+
+    <label for="password">Password</label>
+    <input
+      class="form-control"
+      type="password"
+      name="password"
+      id="password"
+      required
+      placeholder="length 8 or more atleast one symbol (@$!%?&), number, lower and uppercase character"
+    />
+
+    <label for="confirm-password">Confirm Password</label>
+    <input
+      class="form-control"
+      type="password"
+      name="confirm-password"
+      id="confirm-password"
+      required
+    />
+  </div>
+
+  <div class="p-5 d-flex flex-column align-items-center">
+    <button class="btn btn-primary" type="submit">Register</button>
+
+    <p>Already have an account</p>
+    <a href="{{url_for('Login')}}">
+      <button class="btn btn-secondary" type="button">Login</button>
+    </a>
+  </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container-fluid cart">
+  <!-- Used and Altered from view_products.html -->
+  <table>
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Amount</th>
+      <th>Total</th>
+      <th>Deliverable?</th>
+      <th>Collectable?</th>
+      <th>
+        <!-- Empty column for controls/form -->
+      </th>
+    </tr>
+
+    <!--customerID, ProductID, Ammount, ID , ProductName, Description, Cost, Unit, Stock, Method, DeliveryAvailable, Collection Available -->
+    {% for row in products %}
+    <tr>
+      <td>
+        <!-- Name -->
+        {{row[4]}}
+      </td>
+      <td>
+        <!-- Price -->
+        {{row[6]}}
+      </td>
+      <td>
+        <!-- Amount -->
+        {{row[2]}}
+      </td>
+      <td>
+        <!-- Total -->
+        {{row[2] * row[6]}}
+      </td>
+
+      <!-- Return false stops the user from being able to check/uncheck the box -->
+      <td>
+        {% if row[11] %}
+        <input type="checkbox" checked onclick="return false;" />
+        {% else %}
+        <input type="checkbox" onclick="return false;" />
+        {% endif %}
+      </td>
+
+      <td>
+        {% if row[12] %}
+        <input type="checkbox" checked onclick="return false;" />
+        {% else %}
+        <input type="checkbox" onclick="return false;" />
+        {% endif %}
+      </td>
+
+      <td>
+        <a href="/products-single/{{row[1]}}">
+          <button>View</button>
+        </a>
+        <a href="/remove-product/{{row[1]}}">
+          <button>Remove</button>
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+  {% if products %}
+  <a href="{{url_for('CheckoutReviewCart')}}">
+    <button>To Checkout</button>
+  </a>
+  {% else %}
+  <p>No products in cart</p>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+<div class="alert alert-success">
+  <h2>Notice</h2>
+  <h3>Prototype under development</h3>
+  <p>
+    Payment Portal will be in final product, order will be stored in database
+  </p>
+</div>
+
+<form action="/checkout/payment" class="container" method="POST">
+  <button class="btn btn-success">Place Order</button>
+</form>
+
+{% endblock %}

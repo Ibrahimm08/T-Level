@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block content %}
+<div class="section">
+  <div>
+    {% if address[0] %}
+
+    <h2>Current Address</h2>
+    <div class="address">
+      <p>{{address[0]}}</p>
+    </div>
+
+    {% else %}
+    <div class="alert alert-warning">
+      <h2>No address connected to account</h2>
+      <p>Address required to proceed</p>
+    </div>
+    {% endif %}
+
+    <a href="{{url_for('CheckoutAddAddress')}}">
+      <button class="btn btn-outline-primary">Add New Address</button>
+    </a>
+  </div>
+
+  {% if address[0] %}
+  <form action="/checkout/order-details" class="container" method="POST">
+    <div class="schedule">
+      <h2>Preffered Date for order</h2>
+      <p>Your order will be ready at the closest date possible</p>
+
+      <label for="date">Preffered Date</label>
+      <input type="date" name="date" id="date" class="form-control" required />
+    </div>
+
+    <button class="btn btn-success">Review Order</button>
+  </form>
+  {% endif %}
+</div>
+{% endblock %}

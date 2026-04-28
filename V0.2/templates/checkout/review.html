@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container-fluid section">
+  <!-- User Cart Table goes here -->
+  <div class="cart">
+    <!-- Used and Altered from view_products.html -->
+    <table>
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th>Total</th>
+        <th>Deliverable?</th>
+        <th>Collectable?</th>
+        <th>
+          <!-- Empty column for controls/form -->
+        </th>
+      </tr>
+
+      <!--customerID, ProductID, Ammount, ID , ProductName, Description, Cost, Unit, Stock, Method, DeliveryAvailable, Collection Available -->
+      {% for row in products %}
+      <tr>
+        <td>
+          <!-- Name -->
+          {{row[4]}}
+        </td>
+        <td>
+          <!-- Price -->
+          £{{row[6]}}
+        </td>
+        <td>
+          <!-- Amount -->
+          {{row[2]}}
+        </td>
+        <td>
+          <!-- Total -->
+          £{{row[2] * row[6]}}
+        </td>
+
+        <!-- Return false stops the user from being able to check/uncheck the box -->
+        <td>
+          {% if row[11] %}
+          <input type="checkbox" checked onclick="return false;" />
+          {% else %}
+          <input type="checkbox" onclick="return false;" />
+          {% endif %}
+        </td>
+
+        <td>
+          {% if row[12] %}
+          <input type="checkbox" checked onclick="return false;" />
+          {% else %}
+          <input type="checkbox" onclick="return false;" />
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+  <div class="buttons">
+    <p>Choose order type:</p>
+    <p>
+      Orders that are unable to be collected/delivered won't be included in
+      final checkout
+    </p>
+
+    <a href="/checkout/1">
+      <button>Collection</button>
+    </a>
+
+    <a href="/checkout/0">
+      <button>Delivery</button>
+    </a>
+  </div>
+</div>
+
+{% endblock %}

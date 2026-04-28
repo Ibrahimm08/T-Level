@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page_name}}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static', filename='styles/style.css')}}"
+    />
+
+    <!-- BOOTSTRAP 5 CDN -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- BOOTSTRAP 5 CDN -->
+
+    {% block style %} {% endblock %}
+  </head>
+  <body class="">
+    <!-- Mobile button to open offcanvas -->
+    <div class="mb-5 d-lg-none navbar container-fluid">
+      <div class="ms-2 navbar-brand">Greenfeild Local Hub</div>
+      <h2 class="nav-item">{{page_name}}</h2>
+        <button
+          class="btn btn-primary d-block d-lg-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#sideOffcanvas"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <nav
+      class="col-3 d-none d-lg-flex flex-column navbar-side d-none d-lg-flex"
+    >
+      <div class="navbar-brand"><h2>Greenfeild Local Hub</h2></div>
+
+      <div class="heading one">
+        <h2>Account</h2>
+        <div class="links">
+          <a href="">Account Details</a>
+          <a href="">Settings</a>
+          <a href="">Prefferences</a>
+          <a href="{{url_for('Dashboard')}}">Dashboard</a>
+        </div>
+      </div>
+
+      <div class="heading two">
+        <h2 class="text-nowrap">My Orders and Products</h2>
+        <div class="links">
+          <a href="{{url_for('ViewOrder')}}">My Orders</a>
+          <a href="{{url_for('OrderHistory')}}">Order History</a>
+
+          <!-- Only show this link if business account -->
+          {% if session.type == "BusinessAccount" %}
+          <a href="{{url_for('ViewProduct')}}">View Products</a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" id="sideOffcanvas">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title"><h2>Greenfeild Local Hub</h2></div>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="heading one">
+          <h3>Account</h3>
+          <div class="d-flex flex-column links">
+            <a href="">Account Details</a>
+            <a href="">Settings</a>
+            <a href="">Prefferences</a>
+            <a href="{{url_for('Dashboard')}}">Dashboard</a>
+          </div>
+        </div>
+
+        <div class="heading two">
+          <h3>My Orders and Products</h3>
+          <div class="d-flex flex-column links">
+            <a href="{{url_for('ViewOrder')}}">My Orders</a>
+            <a href="{{url_for('OrderHistory')}}">Order History</a>
+
+            <!-- Only show this link if business account -->
+            {% if session.type == "BusinessAccount" %}
+            <a href="{{url_for('ViewProduct')}}">View Products</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-9 container-fluid mt-5 main">
+      <a class="position-absolute" style="right: 0" href="{{url_for('Index')}}">
+        <button class="btn btn-warning">To Home</button>
+      </a>
+      {% block content %} {% endblock %}
+    </div>
+  </body>
+</html>

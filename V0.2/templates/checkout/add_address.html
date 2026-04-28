@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block content %}
+<form action="/checkout/add-address" method="POST">
+  <label for="postcode">Postcode</label>
+  <input type="text" name="postcode" id="" required />
+
+  <label for="city">City</label>
+  <input type="text" name="city" required />
+
+  <label for="address-line-1">Address Line 1</label>
+  <input type="text" name="address-line-1" required />
+
+  <label for="address-line-2">Address Line 2</label>
+  <input type="text" name="address-line-2" />
+
+  <button class="btn btn-success">Add</button>
+
+  <a href="{{url_for('CheckoutDetails')}}">
+    <button class="btn btn-danger">Cancel</button>
+  </a>
+</form>
+{% endblock %}

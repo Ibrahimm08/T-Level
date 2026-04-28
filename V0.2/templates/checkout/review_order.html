@@ -1,0 +1,86 @@
+{% extends "base.html" %} {% block content %}
+<div class="container-fluid details">
+  <div class="address">
+    <h3>Address</h3>
+    <p>{{address[0]}}</p>
+  </div>
+
+  <div class="schedule">
+    <h3>Preffered Ready by Date</h3>
+    <p>{{order_date}}</p>
+  </div>
+
+  <div class="prefference">
+    <h3>Preffered Order Method</h3>
+    <p>{{order_method}}</p>
+  </div>
+
+  <div class="total mb-5">
+    <!-- Table showing items, delivery fee, and total -->
+    <table style="width: 100%;">
+      <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th>Total</th>
+        <th>Deliverable?</th>
+        <th>Collectable?</th>
+        <th>
+          <!-- Empty column for controls/form -->
+        </th>
+      </tr>
+
+      <!--customerID, ProductID, Ammount, ID , ProductName, Description, Cost, Unit, Stock, Method, DeliveryAvailable, Collection Available -->
+      {% for row in products %}
+      <tr>
+        <td>
+          <!-- Name -->
+          {{row[4]}}
+        </td>
+        <td>
+          <!-- Price -->
+          £{{row[6]}}
+        </td>
+        <td>
+          <!-- Amount -->
+          {{row[2]}}
+        </td>
+        <td>
+          <!-- Total -->
+          £{{row[2] * row[6]}}
+        </td>
+
+        <!-- Return false stops the user from being able to check/uncheck the box -->
+        <td>
+          {% if row[11] %}
+          <input type="checkbox" checked onclick="return false;" />
+          {% else %}
+          <input type="checkbox" onclick="return false;" />
+          {% endif %}
+        </td>
+
+        <td>
+          {% if row[12] %}
+          <input type="checkbox" checked onclick="return false;" />
+          {% else %}
+          <input type="checkbox" onclick="return false;" />
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% if order_method == 'delivery' %}
+    <p>Delivery fee: £3</p>
+    {% endif %}
+    <h4>Total: £{{total}}</h4>
+  </div>
+
+  <a href="{{url_for('Payment')}}">
+    <button class="btn btn-success">To Payment</button>
+  </a>
+
+  <a href="{{url_for('Cart')}}">
+    <button class="btn btn-danger">Cancel</button>
+  </a>
+</div>
+{% endblock %}

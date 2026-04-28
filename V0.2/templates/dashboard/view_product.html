@@ -1,0 +1,56 @@
+{% extends "dashboard_base.html" %} {% block content %}
+
+<div>
+  <h1>{{page_name}}</h1>
+</div>
+
+<div class="product-list">
+  <a href="{{url_for('AddProduct')}}">
+    <button class="btn btn-success">Add Product</button>
+  </a>
+
+  <table style="width: 100%;">
+    <tr>
+      <th>Product Name</th>
+      <th>Stock</th>
+      <th>Unit</th>
+      <th>Price</th>
+      <th>
+        <!-- Empty column for controls/form -->
+      </th>
+    </tr>
+
+    <!-- ID , ProductName, Description, Cost, Unit, Stock, Method, DeliveryAvailable, Collection Available -->
+    {% for row in products %}
+    <tr>
+      <td>
+        <!-- Name -->
+        {{row[1]}}
+      </td>
+      <td>
+        <!-- Stock -->
+        {{row[5]}}
+      </td>
+      <td>
+        <!-- Unit -->
+        {{row[4]}}
+      </td>
+      <td>
+        <!-- Price -->
+        £{{row[3]}}
+      </td>
+
+      <td>
+        <a href="/products-single/{{row[0]}}">
+          <button class="btn btn-primary">View</button>
+        </a>
+        <a href="">
+          <button class="btn btn-danger">Delete</button>
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+
+{% endblock %}

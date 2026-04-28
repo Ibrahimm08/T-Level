@@ -1,0 +1,7 @@
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+  min-height: 500px;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <h1>Order has been placed</h1>
+
+  <a href="{{url_for('ViewOrder')}}">
+    <button class="btn btn-primary">View Order</button>
+  </a>
+
+  <a href="{{url_for('Index')}}">
+    <button class="btn btn-primary">Home</button>
+  </a>
+</div>
+{% endblock %}

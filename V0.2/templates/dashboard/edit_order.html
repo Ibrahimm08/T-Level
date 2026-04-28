@@ -1,0 +1,31 @@
+{% extends "dashboard_base.html" %} {% block content %}
+
+<div>
+  <h3>Order # {{order_id}}</h3>
+
+  <form action="/edit-order/{{order_id}}" method="POST">
+    <label for="status"> Select new status </label>
+    <select name="status" id="">
+      <option value="Pending">Pending</option>
+      <option value="Ready">Ready</option>
+      <option value="Completed">Completed</option>
+      <option value="Cancelled">Cancelled</option>
+
+      {% if type[0] == "Delivery" %}
+      <option value="Ready To Deliver">Ready To Deliver</option>
+      <option value="Delivering">Delivering</option>
+      {% endif %}
+    </select>
+
+    <!-- Add popup to confirm  -->
+    <!-- Give notice cancelling orders is irreversible -->
+
+    <button>Update</button>
+
+    <a href="{{url_for('ViewOrder')}}">
+      <button type="button">Cancel</button>
+    </a>
+  </form>
+</div>
+
+{% endblock %}

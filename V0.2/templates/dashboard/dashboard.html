@@ -1,0 +1,11 @@
+{% extends "dashboard_base.html" %} {% block content %}
+<div>
+  <h1>Welcome {{session.name}}</h1>
+  <a href="/logout"><button class="btn btn-danger">logout</button></a>
+  {% if session.type == "CustomerAccount" %}
+  <div class="container">Points: {{points}}</div>
+  {% endif %}
+</div>
+
+<!-- Content here -->
+{% endblock %}

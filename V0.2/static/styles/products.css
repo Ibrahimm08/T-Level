@@ -1,0 +1,51 @@
+/* Used in products.html */
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  gap: 10px;
+
+  width: calc(100% - 2rem);
+
+  padding: 1rem;
+}
+
+.product-list .controls {
+  width: 300px;
+}
+
+.product-list .controls form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Targeting the divs labels and checkbox */
+.product-list .controls form div div {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.product-list .products {
+  overflow-y: scroll;
+  height: 75vh;
+}
+
+.product-list .products::-webkit-scrollbar {
+  width: 8px;
+}
+
+.product-list .products::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.product-list .products::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Changed products.html update in V0.1 */

@@ -1,0 +1,61 @@
+{% extends "base.html" %} {% block content %}
+<div class="product-single">
+  <!-- Product name -->
+  <h1>{{product[1]}}</h1>
+
+  <div class="section">
+    <div class="img">
+      <!-- Prototype currently doesn't support images, will be placeholder for future deveolpment  -->
+      <img src="" alt="placeholder image" />
+    </div>
+
+    <div class="description">
+      <div>
+        <h3>Description:</h3>
+        <p><b>Provider:</b> {{business_name[0]}}</p>
+        <p><b>Category:</b> {{product[13]}}</p>
+        <p>{{product[2]}}</p>
+      </div>
+
+      <div>
+        <h3>Allergens</h3>
+        <p>{{product[6]}}</p>
+      </div>
+    </div>
+
+    <div class="purchase-info">
+      <p><b>Price:</b> {{product[3]}} {{product[4]}}</p>
+      <p>
+        <b>Available for Delivery:</b> {% if product[8] %} Yes {% else %} No {%
+        endif %}
+      </p>
+      <p>
+        <b>Available for Collection:</b> {% if product[9] %} Yes {% else %} No
+        {% endif %}
+      </p>
+
+      <form action="/add-to-cart" method="POST">
+        <label for="amount">Amount ({{product[5]}} left)</label>
+        <!-- User can't go higher than the total stock of product -->
+        <input
+          type="number"
+          name="amount"
+          min="1"
+          max="{{product[5]}}"
+          value="1"
+        />
+
+        <!-- Store id of product so it can be processed -->
+        <input type="hidden" value="{{product[0]}}" name="product-id" />
+
+        <button>Add To Cart</button>
+      </form>
+    </div>
+
+    <div class="method-desc">
+      <h3>Method</h3>
+      <p>{{product[7]}}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

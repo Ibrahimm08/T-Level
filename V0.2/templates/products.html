@@ -1,0 +1,107 @@
+{% extends "base.html" %} {% block style %}
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{url_for('static', filename='styles/products.css')}}"
+/>
+
+{% endblock %} {% block content %}
+
+<h1>Browse and View Products</h1>
+
+<div class="container-fluid row product-list">
+  <div class="col-lg-4 controls">
+    <form class="container" action="/products" method="GET">
+      <label for="sort">Sort by:</label>
+      <select class="form-select" name="sort" id="sort">
+        <option value="normal">Relavance</option>
+        <option value="low-high">Price: Lowest to Highest</option>
+        <option value="high-low">Price: Highest to Lowest</option>
+      </select>
+
+      <div class="input-group">
+        <label class="input-group-text" for="max"> Max Price </label>
+        <input
+          class="form-control"
+          id="max"
+          type="number"
+          max="1000"
+          value="1000"
+          min="0"
+          name="max"
+        />
+      </div>
+      <div class="input-group">
+        <label class="input-group-text" for="min">Min Price</label>
+        <input
+          class="form-control"
+          id="min"
+          type="number"
+          max="1000"
+          value="0"
+          min="0"
+          name="min"
+        />
+      </div>
+
+      <label for="category">Category</label>
+      <select class="form-select" name="category" id="category">
+        <option value="none">All</option>
+        {% for row in categories %}
+        <option value="{{row[0]}}">{{row[1]}}</option>
+        {% endfor %}
+      </select>
+
+      <div>
+        <div>
+          <label for="allergen">Has Allergens</label>
+          <input type="checkbox" name="allergen" id="allergen" />
+        </div>
+
+        <div>
+          <label for="delivery">Delivery Available</label>
+          <input type="checkbox" name="delivery" id="delivery" />
+        </div>
+
+        <div>
+          <label for="collection">Collection Available</label>
+          <input type="checkbox" name="collection" id="collection" />
+        </div>
+      </div>
+
+      <button class="btn btn-success" type="submit">Apply</button>
+    </form>
+  </div>
+
+  <div class="products col-lg-8 me-0">
+    <!-- Repeat based on how many products there are -->
+    {% for item in products%}
+    <div class="container float-lg-none float-end row mb-5 mt-5">
+      <div class="col-lg-8 row d-flex me-auto">
+        <img class="col-lg" src="" alt="{{item[1]}}" />
+        <div class="col-lg">
+          <h3>{{item[1]}}</h3>
+          <h6>Price: £{{item[3]}} {{item[4]}}</h6>
+          <h6>Stock: {{item[5]}}</h6>
+        </div>
+      </div>
+      <div
+        class="col-lg-4 d-flex flex-column justify-content-center align-items-center ms-mb-auto mt-mb-0 mt-3"
+      >
+        <!-- if 0 then no if 1 then yes -->
+        <h6>Deliverable: {% if item[8] %} Yes {% else %} No {% endif %}</h6>
+        <h6>Collectable: {% if item[9] %} Yes {% else %} No {% endif %}</h6>
+
+        <!-- Passes the ID into the route to be used in the page -->
+        <a href="/products-single/{{item[0]}}"
+          ><button class="btn btn-secondary">View</button></a
+        >
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
