@@ -497,7 +497,16 @@ Useful Links:
   - What didn't work
   - What differences existed
   - What the data as a whole suggests
-  - Which areas need improvement  
+  - Which areas need improvement
+  - Overall ratings
+  - See how it could be developed further
+  - Bounce rate keep right audience
+  - Functionality
+  - Front end vs backend
+  - Missing elements
+  - Development
+
+Go through every queestion and talk about it
 
 ### Notes
 - Which areas scored the highest
