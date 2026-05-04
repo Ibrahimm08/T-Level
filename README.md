@@ -501,9 +501,11 @@ Useful Links:
   - See how it could be developed further
   - Bounce rate keep right audience
   - Functionality
-  - Front end vs backend
+  - Front-end vs back-end
   - Missing elements
   - Development
+  - what users most liked
+  - what users most disliked/disapointed
 
 Go through every queestion and talk about it
 
