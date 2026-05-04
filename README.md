@@ -506,6 +506,8 @@ Useful Links:
   - Development
   - what users most liked
   - what users most disliked/disapointed
+  - what did you do during development
+  - Go over different components that you asked about
 
 Go through every queestion and talk about it
 
